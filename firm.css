@@ -1,0 +1,46 @@
+@layer global{
+
+  @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+  
+  @import url(https://fonts.googleapis.com/css?family=Mada:200,300,regular,500,600,700,800,900);
+
+  :root{
+    /* COLORS*/
+    ---back-clr: #0A0C10;
+    ---surface-dark-clr: #111418;
+    ---text-main-offwhite-clr: #E8EDF2;
+    ---text-muted-grey-blue-clr:  #8695A6;
+    ---border-deep-slate-clr: #1E2A36;
+    ---accent-cold-blue-clr: #3B82F6;
+    ---review-verified-green-clinical-clr: #10B981;
+    ---review-unverified-yellow-clinical-clr: #FBBF24;
+
+
+    
+    /* FONTS*/
+    ---main-font: 'IBM Plex Sans', sans-serif;
+    ---alt-font: 'Mada', sans-serif;
+
+    /* font-sizes */
+    ---navigation-link-fs: 0.85rem;
+    ---h1-fs: 1.5rem;
+    ---h2-fs: 1.25rem;
+    ---build-title-fs: 1.1rem;
+    ---body-text-fs: 1rem;
+    ---small-text-fs: 0.8rem;
+    ---reviews-fs: 0.95rem;
+    /* font-weight */
+    ---thin-fw: 100;
+    ---extra-light-fw: 200;
+    ---navigation-link-fw: 500;
+    ---h1-fw: 700;
+    ---h2-fw: 600;
+    ---build-title-fw: 500;
+    ---body-text-fw: 400;
+    ---small-text-fw: 300;
+    ---reviews-fw: 400;
+  }
+  html{
+    font-size: 62.5%;
+  }
+}
