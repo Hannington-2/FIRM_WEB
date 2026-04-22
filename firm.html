@@ -18,23 +18,53 @@
     <title>SOFTWA|| </title>
 </head>
 <body>
-    <div class="nav-links">
-        <a href="/builds" class="nav-link">
-          <i class="heroicons-cube"></i> Builds
-        </a>
-        <a href="/dev-log" class="nav-link">
-          <i class="heroicons-document-text"></i> Dev Log
-        </a>
-        <a href="/specs" class="nav-link">
-          <i class="heroicons-list-bullet"></i> Specs
-        </a>
-        <a href="/audit-trails" class="nav-link">
-          <i class="heroicons-shield-check"></i> Audit Trails
-        </a>
-        <a href="/stack-bench" class="nav-link">
-          <i class="heroicons-chart-bar"></i> Stack Bench
-        </a>
-      </div>
+   <header class="primary-header FLEX">
+    <div class="logo-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+            <text x="50%" y="35" text-anchor="middle" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="600" letter-spacing="4">TECH SPACE</text>        
+            <text x="50%" y="52" text-anchor="middle" fill="#8695A6" font-family="'IBM Plex Sans', sans-serif" font-size="8" letter-spacing="2">BUILDS • SPECS • AUDITS</text>
+          </svg>
+    </div>
+    <button type="button" class="mobile-nav-toggle" aria-control="primary-navigation" aria-expanded="false">
+        <span class=></span>
+    </button>
+    
+    <span class="sr-only"></span>
+
+    <nav class="primary-navigation FLEX" data-visible="false" role="navigation" aria-label="Primary-Navigation">
+        <ul id="primary-navigation" class="primary-navigation FLEX">
+            <li class="nav-link active">
+                <a href="builds.html"> <i class="fa fa-cubes" aria-hidden="true">
+                  </svg>
+                  ></i>
+                <span aria-hidden="true"></span>BUILDS</a>
+            </li>
+            <li class="nav-link">
+                <a href="dev-logs.html"> <i class="heroicons-document-text"><span aria-hidden="true"></span></i>DEV LOGS</a>
+            </li>
+            <li class="nav-link">
+                <a href="specs.html"> <i class="heroicons-clipboard"></i><span aria-hidden="true"></span>SPECS</a>
+            </li>
+            <li class="nav-link">
+                <a href="audit-trails.html"> <i class="heroicons-shield-check"></i><span aria-hidden="true"></span>AUDIT TRAILS</a>
+            </li>
+            <li class="nav-link">
+                <a href="stack-bench.html"> <i class="heroicons-chart-bar"></i><span aria-hidden="true"></span>STACK BENCH</a>
+            </li>
+
+        </ul>
+        
+    </nav>
+    <nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link"><a href=""> <i class="heroicons-hire"></i>HIRE ME</a></li>
+                <li class="nav-link"><a href=""> <i class="heroicons-contact"></i>CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+   </header>
     
 </body>
 </html>
