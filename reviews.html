@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEWS | Tech Space - Client Feedback</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="firm.css">
+    <script defer src="firm.js"></script>
+</head>
+<body>
+    <header class="primary-header FLEX">
+        <a href="index.html" class="logo-container">
+            <svg class="tech-logo-animated" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <text class="logo-text-tech" x="50%" y="32" text-anchor="middle" fill="url(#logoGradient)" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="700" letter-spacing="4">TECH SPACE</text>        
+                <text class="logo-text-tagline" x="50%" y="50" text-anchor="middle" fill="#8695A6" font-family="'IBM Plex Sans', sans-serif" font-size="9" letter-spacing="3">BUILDS • SPECS • AUDITS</text>
+            </svg>
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-control="primary-navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="primary-navigation FLEX" data-visible="false" role="navigation">
+            <ul id="primary-navigation" class="primary-navigation FLEX">
+                <li class="nav-link" data-animate="slide-in">
+                    <a href="index.html"><span class="nav-indicator"></span>HOME</a>
+                </li>
+                <li class="nav-link" data-animate="slide-in">
+                    <a href="builds.html"><span class="nav-indicator"></span>BUILDS</a>
+                </li>
+                <li class="nav-link active" data-animate="slide-in">
+                    <a href="reviews.html"><span class="nav-indicator"></span>REVIEWS</a>
+                </li>
+                <li class="nav-link" data-animate="slide-in">
+                    <a href="contact.html"><span class="nav-indicator"></span>CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link" data-animate="slide-in"><a href="contact.html" class="cta-btn-primary">HIRE ME</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="page-hero-content" data-animate="fade-drop">
+                <span class="section-tag">FEEDBACK</span>
+                <h1 class="page-title">Client Reviews</h1>
+                <p class="page-subtitle">What clients say after working together</p>
+            </div>
+        </section>
+
+        <section class="reviews-full-section">
+            <div class="section-container">
+                <div class="reviews-grid">
+                    <article class="review-card" data-animate="slide-up" data-delay="0">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <span class="avatar-initial">JM</span>
+                            </div>
+                            <div class="review-meta">
+                                <h4 class="reviewer-name">James M.</h4>
+                                <span class="review-role">CEO, RetailTech Solutions</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                            </div>
+                        </div>
+                        <blockquote class="review-text">
+                            "Delivered a custom inventory system that transformed our operations. 
+                            Professional, communicative, and delivered ahead of schedule. The system 
+                            handles 50,000+ SKUs seamlessly. Outstanding work!"
+                        </blockquote>
+                        <div class="review-project">
+                            <span class="project-label">Project:</span>
+                            <span class="project-name">Custom Inventory ERP</span>
+                        </div>
+                        <div class="review-date">January 2024</div>
+                    </article>
+
+                    <article class="review-card" data-animate="slide-up" data-delay="1">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <span class="avatar-initial">SK</span>
+                            </div>
+                            <div class="review-meta">
+                                <h4 class="reviewer-name">Sarah K.</h4>
+                                <span class="review-role">Director, Greenfield Academy</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                            </div>
+                        </div>
+                        <blockquote class="review-text">
+                            "The school management system simplified our entire admission process. 
+                            Parents love the portal, and our staff efficiency increased by 40%. 
+                            Excellent ongoing support and always responsive to changes."
+                        </blockquote>
+                        <div class="review-project">
+                            <span class="project-label">Project:</span>
+                            <span class="project-name">School Management System</span>
+                        </div>
+                        <div class="review-date">November 2023</div>
+                    </article>
+
+                    <article class="review-card" data-animate="slide-up" data-delay="2">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <span class="avatar-initial">DN</span>
+                            </div>
+                            <div class="review-meta">
+                                <h4 class="reviewer-name">David N.</h4>
+                                <span class="review-role">Owner, Nairobi Properties</span>
+                            </div>
+                            <div class="review-rating">
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-filled"></i>
+                                <i class="ti ti-star-half"></i>
+                            </div>
+                        </div>
+                        <blockquote class="review-text">
+                            "Managed 35 rental properties seamlessly with this system. Automated payments 
+                            and maintenance tracking saved us 15 hours weekly. Minor bugs were fixed 
+                            quickly within 24 hours. Highly recommend for property managers."
+                        </blockquote>
+                        <div class="review-project">
+                            <span class="project-label">Project:</span>
+                            <span class="project-name">Rental Management System</span>
+                        </div>
+                        <div class="review-date">September 2023</div>
+                    </article>
+                </div>
+                
+                <div class="review-cta" data-animate="fade-in">
+                    <div class="review-cta-content">
+                        <i class="ti ti-message-circle-2"></i>
+                        <p class="cta-text">Worked together? Share your experience</p>
+                        <button class="cta-btn-review" id="leaveReviewBtn">LEAVE A REVIEW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="reviewModal" data-visible="false">
+        <div class="modal-content" data-animate="modal-pop">
+            <button class="modal-close" id="closeModal" aria-label="Close">
+                <i class="ti ti-x"></i>
+            </button>
+            <div class="modal-header">
+                <h3 class="modal-title">Share Your Experience</h3>
+                <p class="modal-subtitle">Your feedback helps improve our service</p>
+            </div>
+            <form class="review-form" id="reviewForm">
+                <div class="form-group">
+                    <label for="reviewer-name" class="form-label">Your Name</label>
+                    <input type="text" id="reviewer-name" name="reviewer-name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewer-company" class="form-label">Company (Optional)</label>
+                    <input type="text" id="reviewer-company" name="reviewer-company" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Rating</label>
+                    <div class="rating-star-input">
+                        <button type="button" class="star-btn" data-rating="1"><i class="ti ti-star"></i></button>
+                        <button type="button" class="star-btn" data-rating="2"><i class="ti ti-star"></i></button>
+                        <button type="button" class="star-btn" data-rating="3"><i class="ti ti-star"></i></button>
+                        <button type="button" class="star-btn" data-rating="4"><i class="ti ti-star"></i></button>
+                        <button type="button" class="star-btn" data-rating="5"><i class="ti ti-star"></i></button>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="review-message" class="form-label">Your Review</label>
+                    <textarea id="review-message" name="review-message" class="form-textarea" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="form-submit">SUBMIT REVIEW</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 40" width="150" height="40">
+                    <text x="50%" y="25" text-anchor="middle" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" letter-spacing="3">TECH SPACE</text>        
+                    <text x="50%" y="36" text-anchor="middle" fill="#8695A6" font-family="'IBM Plex Sans', sans-serif" font-size="7" letter-spacing="2">BUILDS • SPECS • AUDITS</text>
+                </svg>
+                <p class="footer-tagline">Enterprise software solutions for modern businesses.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="builds.html">Builds</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Projects</h4>
+                    <ul>
+                        <li><a href="builds.html">Supermarket ERP</a></li>
+                        <li><a href="builds.html">School ERP</a></li>
+                        <li><a href="builds.html">Rental System</a></li>
+                        <li><a href="builds.html">Hotel HMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Social</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://x.com/yourprofile" target="_blank">X</a></li>
+                        <li><a href="https://instagram.com/yourprofile" target="_blank">Instagram</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 Tech Space. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STACK BENCH | Tech Space - Industry Analytics</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="firm.css">
+    <script defer src="firm.js"></script>
 </head>
 <body>
-    
+    <header class="primary-header FLEX">
+        <a href="index.html" class="logo-nav">
+            <img src="assets/logo.svg" alt="Logo" class="logo_main" width="50px">
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="primary-navigation FLEX" data-visible="false" role="navigation" aria-label="Primary-Navigation">
+            <ul id="primary-navigation" class="primary-navigation FLEX">
+                <li class="nav-link">
+                    <a href="builds.html"><i class="ti ti-packages"></i><span>BUILDS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="devLog.html"><i class="ti ti-file-text"></i><span>DEV LOGS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Specs.html"><i class="ti ti-clipboard-list"></i><span>SPECS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Audit.html"><i class="ti ti-shield-check"></i><span>AUDIT TRAILS</span></a>
+                </li>
+                <li class="nav-link active">
+                    <a href="stackBench.html"><i class="ti ti-chart-bar"></i><span>STACK BENCH</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link"><a href="contact.html" class="cta-btn-primary">HIRE ME</a></li>
+                <li class="nav-link"><a href="contact.html" class="cta-btn-secondary">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="page-hero-content" data-animate="fade-drop">
+                <span class="section-tag">ANALYTICS</span>
+                <h1 class="page-title">Stack Bench</h1>
+                <p class="page-subtitle">Technology benchmarks, market analysis, and industry insights</p>
+            </div>
+        </section>
+
+        <section class="bench-section">
+            <div class="section-container">
+                <div class="bench-grid">
+                    <article class="bench-card" data-animate="slide-up">
+                        <div class="bench-header">
+                            <span class="bench-rank">#1</span>
+                            <h3 class="bench-title">Frontend Frameworks</h3>
+                        </div>
+                        <div class="bench-body">
+                            <p class="bench-desc">Performance comparison of modern JavaScript frameworks based on real-world applications.</p>
+                            <ul class="bench-metrics">
+                                <li>React 18</li>
+                                <li>Vue 3</li>
+                                <li>Svelte</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="bench-card" data-animate="slide-up" data-delay="1">
+                        <div class="bench-header">
+                            <span class="bench-rank">#2</span>
+                            <h3 class="bench-title">Backend Platforms</h3>
+                        </div>
+                        <div class="bench-body">
+                            <p class="bench-desc">Node.js vs Python Django vs Go performance metrics for enterprise scale.</p>
+                            <ul class="bench-metrics">
+                                <li>Node.js</li>
+                                <li>Python Django</li>
+                                <li>Go</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="bench-card" data-animate="slide-up" data-delay="2">
+                        <div class="bench-header">
+                            <span class="bench-rank">#3</span>
+                            <h3 class="bench-title">Database Systems</h3>
+                        </div>
+                        <div class="bench-body">
+                            <p class="bench-desc">SQL vs NoSQL performance benchmarks for large-scale data processing.</p>
+                            <ul class="bench-metrics">
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="bench-card" data-animate="slide-up" data-delay="3">
+                        <div class="bench-header">
+                            <span class="bench-rank">#4</span>
+                            <h3 class="bench-title">Cloud Providers</h3>
+                        </div>
+                        <div class="bench-body">
+                            <p class="bench-desc">Cost-performance analysis of AWS, Google Cloud, and Azure services.</p>
+                            <ul class="bench-metrics">
+                                <li>AWS</li>
+                                <li>Google Cloud</li>
+                                <li>Azure</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Logo" class="footer-logo" width="150">
+                <p class="footer-tagline">Enterprise software solutions.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="builds.html">Builds</a></li>
+                        <li><a href="devLog.html">Dev Logs</a></li>
+                        <li><a href="Specs.html">Specs</a></li>
+                        <li><a href="Audit.html">Audit Trails</a></li>
+                        <li><a href="stackBench.html">Stack Bench</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+                        <li><a href="https://x.com/yourprofile">X</a></li>
+                        <li><a href="https://github.com/yourprofile">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p class="copyright">&copy; 2024 Tech Space. All rights reserved.</p></div>
+    </footer>
 </body>
 </html>

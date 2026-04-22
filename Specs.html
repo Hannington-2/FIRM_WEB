@@ -3,10 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SPECS | Tech Space - Project Specifications</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="firm.css">
+    <script defer src="firm.js"></script>
 </head>
 <body>
-    
+    <header class="primary-header FLEX">
+        <a href="index.html" class="logo-nav">
+            <img src="assets/logo.svg" alt="Logo" class="logo_main" width="50px">
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-control="primary-navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="primary-navigation FLEX" data-visible="false" role="navigation" aria-label="Primary-Navigation">
+            <ul id="primary-navigation" class="primary-navigation FLEX">
+                <li class="nav-link">
+                    <a href="builds.html"><i class="ti ti-packages"></i><span>BUILDS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="devLog.html"><i class="ti ti-file-text"></i><span>DEV LOGS</span></a>
+                </li>
+                <li class="nav-link active">
+                    <a href="Specs.html"><i class="ti ti-clipboard-list"></i><span>SPECS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Audit.html"><i class="ti ti-shield-check"></i><span>AUDIT TRAILS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="stackBench.html"><i class="ti ti-chart-bar"></i><span>STACK BENCH</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link"><a href="contact.html" class="cta-btn-primary">HIRE ME</a></li>
+                <li class="nav-link"><a href="contact.html" class="cta-btn-secondary">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="page-hero-content" data-animate="fade-drop">
+                <span class="section-tag">SPECIFICATIONS</span>
+                <h1 class="page-title">Project Specs</h1>
+                <p class="page-subtitle">Technical specifications and requirements for each project</p>
+            </div>
+        </section>
+
+        <section class="specs-section">
+            <div class="section-container">
+                <div class="specs-grid">
+                    <article class="spec-card" data-animate="slide-up">
+                        <div class="spec-header">
+                            <div class="spec-icon"><i class="ti ti-shopping-cart"></i></div>
+                            <div class="spec-title-group">
+                                <h3 class="spec-title">Supermarket ERP</h3>
+                                <span class="spec-status">IN PROGRESS</span>
+                            </div>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Core Features</h4>
+                                <ul class="spec-list">
+                                    <li>Multi-branch inventory management</li>
+                                    <li>POS integration with barcode scanning</li>
+                                    <li>Real-time sales analytics</li>
+                                    <li>Supplier management & orders</li>
+                                    <li>Stock alerts & reordering</li>
+                                </ul>
+                            </div>
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Tech Stack</h4>
+                                <ul class="spec-list">
+                                    <li>React + TypeScript</li>
+                                    <li>Node.js REST API</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Docker</li>
+                                    <li>AWS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="spec-card" data-animate="slide-up" data-delay="1">
+                        <div class="spec-header">
+                            <div class="spec-icon"><i class="ti ti-school"></i></div>
+                            <div class="spec-title-group">
+                                <h3 class="spec-title">School Management ERP</h3>
+                                <span class="spec-status">IN PROGRESS</span>
+                            </div>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Core Features</h4>
+                                <ul class="spec-list">
+                                    <li>Student information system</li>
+                                    <li>Attendance tracking</li>
+                                    <li>Grade management</li>
+                                    <li>Fee collection</li>
+                                    <li>Parent portal</li>
+                                </ul>
+                            </div>
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Tech Stack</h4>
+                                <ul class="spec-list">
+                                    <li>React</li>
+                                    <li>Python Django</li>
+                                    <li>PostgreSQL</li>
+                                    <li>AWS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="spec-card" data-animate="slide-up" data-delay="2">
+                        <div class="spec-header">
+                            <div class="spec-icon"><i class="ti ti-home"></i></div>
+                            <div class="spec-title-group">
+                                <h3 class="spec-title">Rental Management</h3>
+                                <span class="spec-status">IN PROGRESS</span>
+                            </div>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Core Features</h4>
+                                <ul class="spec-list">
+                                    <li>Property listings</li>
+                                    <li>Tenant database</li>
+                                    <li>Lease management</li>
+                                    <li>Maintenance requests</li>
+                                    <li>M-Pesa payments</li>
+                                </ul>
+                            </div>
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Tech Stack</h4>
+                                <ul class="spec-list">
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>MongoDB</li>
+                                    <li>Stripe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="spec-card" data-animate="slide-up" data-delay="3">
+                        <div class="spec-header">
+                            <div class="spec-icon"><i class="ti ti-hotel"></i></div>
+                            <div class="spec-title-group">
+                                <h3 class="spec-title">Hotel Management</h3>
+                                <span class="spec-status planning">PLANNING</span>
+                            </div>
+                        </div>
+                        <div class="spec-body">
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Core Features</h4>
+                                <ul class="spec-list">
+                                    <li>Online reservations</li>
+                                    <li>Front desk ops</li>
+                                    <li>Room management</li>
+                                    <li>Housekeeping</li>
+                                    <li>Billing</li>
+                                </ul>
+                            </div>
+                            <div class="spec-section">
+                                <h4 class="spec-section-title">Tech Stack</h4>
+                                <ul class="spec-list">
+                                    <li>React + Next.js</li>
+                                    <li>Node.js</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Logo" class="footer-logo" width="150">
+                <p class="footer-tagline">Enterprise software solutions.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="builds.html">Builds</a></li>
+                        <li><a href="devLog.html">Dev Logs</a></li>
+                        <li><a href="Specs.html">Specs</a></li>
+                        <li><a href="Audit.html">Audit Trails</a></li>
+                        <li><a href="stackBench.html">Stack Bench</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+                        <li><a href="https://x.com/yourprofile">X</a></li>
+                        <li><a href="https://github.com/yourprofile">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p class="copyright">&copy; 2024 Tech Space</p></div>
+    </footer>
 </body>
 </html>

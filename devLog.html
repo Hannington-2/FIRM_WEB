@@ -3,10 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV LOGS | Tech Space - Developer Notes</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="firm.css">
-    <title>Document</title>
+    <script defer src="firm.js"></script>
 </head>
 <body>
-    
+    <header class="primary-header FLEX">
+        <a href="index.html" class="logo-nav">
+            <img src="assets/logo.svg" alt="Logo" class="logo_main" width="50px">
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-control="primary-navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="primary-navigation FLEX" data-visible="false" role="navigation" aria-label="Primary-Navigation">
+            <ul id="primary-navigation" class="primary-navigation FLEX">
+                <li class="nav-link">
+                    <a href="builds.html"><i class="ti ti-packages"></i><span>BUILDS</span></a>
+                </li>
+                <li class="nav-link active">
+                    <a href="devLog.html"><i class="ti ti-file-text"></i><span>DEV LOGS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Specs.html"><i class="ti ti-clipboard-list"></i><span>SPECS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Audit.html"><i class="ti ti-shield-check"></i><span>AUDIT TRAILS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="stackBench.html"><i class="ti ti-chart-bar"></i><span>STACK BENCH</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link"><a href="contact.html" class="cta-btn-primary">HIRE ME</a></li>
+                <li class="nav-link"><a href="contact.html" class="cta-btn-secondary">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="page-hero-content" data-animate="fade-drop">
+                <span class="section-tag">DOCUMENTATION</span>
+                <h1 class="page-title">Dev Logs</h1>
+                <p class="page-subtitle">Development notes, progress updates, and technical documentation</p>
+            </div>
+        </section>
+
+        <section class="logs-section">
+            <div class="section-container">
+                <div class="logs-grid">
+                    <article class="log-card" data-animate="slide-up">
+                        <div class="log-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="log-content">
+                            <span class="log-tag">UPDATE</span>
+                            <h3 class="log-title">Supermarket ERP - Inventory Module</h3>
+                            <p class="log-text">Completed the core inventory tracking system with barcode scanning support. Added multi-branch inventory transfer functionality. Working on real-time analytics dashboard next.</p>
+                            <div class="log-meta">
+                                <span class="log-status completed">COMPLETED</span>
+                                <span class="log-time">2 hours ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="log-card" data-animate="slide-up" data-delay="1">
+                        <div class="log-date">
+                            <span class="date-day">20</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="log-content">
+                            <span class="log-tag">UPDATE</span>
+                            <h3 class="log-title">School ERP - Parent Portal Beta</h3>
+                            <p class="log-text">Released beta version of parent portal. Parents can now view grades, attendance, and fee statements. Feedback loop implemented for suggestions.</p>
+                            <div class="log-meta">
+                                <span class="log-status in-progress">IN PROGRESS</span>
+                                <span class="log-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="log-card" data-animate="slide-up" data-delay="2">
+                        <div class="log-date">
+                            <span class="date-day">18</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="log-content">
+                            <span class="log-tag">FEATURE</span>
+                            <h3 class="log-title">Rental System - Payment Integration</h3>
+                            <p class="log-text">Integrated M-Pesa API for automated rent collection. Tenants can now set up auto-pay. Payment reminders sent 3 days before due date.</p>
+                            <div class="log-meta">
+                                <span class="log-status completed">COMPLETED</span>
+                                <span class="log-time">4 days ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="log-card" data-animate="slide-up" data-delay="3">
+                        <div class="log-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">APR</span>
+                        </div>
+                        <div class="log-content">
+                            <span class="log-tag">PLANNING</span>
+                            <h3 class="log-title">Hotel HMS - System Architecture</h3>
+                            <p class="log-text">Started planning the hotel management system. Key modules: reservations, front desk, housekeeping, billing. Researching best practices for hotel ERP.</p>
+                            <div class="log-meta">
+                                <span class="log-status planning">PLANNING</span>
+                                <span class="log-time">1 week ago</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Logo" class="footer-logo" width="150">
+                <p class="footer-tagline">Enterprise software solutions for modern businesses.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="builds.html">Builds</a></li>
+                        <li><a href="devLog.html">Dev Logs</a></li>
+                        <li><a href="Specs.html">Specs</a></li>
+                        <li><a href="Audit.html">Audit Trails</a></li>
+                        <li><a href="stackBench.html">Stack Bench</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Projects</h4>
+                    <ul>
+                        <li><a href="builds.html">Supermarket ERP</a></li>
+                        <li><a href="builds.html">School ERP</a></li>
+                        <li><a href="builds.html">Rental System</a></li>
+                        <li><a href="builds.html">Hotel HMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://x.com/yourprofile" target="_blank">X</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p class="copyright">&copy; 2024 Tech Space. All rights reserved.</p></div>
+    </footer>
 </body>
 </html>

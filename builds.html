@@ -3,11 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILDS | Tech Space - Enterprise Software</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="firm.css">
-
-    <title>Document</title>
+    <script defer src="firm.js"></script>
 </head>
 <body>
-    
+    <header class="primary-header FLEX">
+        <a href="index.html" class="logo-nav">
+            <img src="assets/logo.svg" alt="Logo" class="logo_main" width="50px">
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-control="primary-navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="primary-navigation FLEX" data-visible="false" role="navigation" aria-label="Primary-Navigation">
+            <ul id="primary-navigation" class="primary-navigation FLEX">
+                <li class="nav-link active">
+                    <a href="builds.html"><i class="ti ti-packages"></i><span>BUILDS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="devLog.html"><i class="ti ti-file-text"></i><span>DEV LOGS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Specs.html"><i class="ti ti-clipboard-list"></i><span>SPECS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Audit.html"><i class="ti ti-shield-check"></i><span>AUDIT TRAILS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="stackBench.html"><i class="ti ti-chart-bar"></i><span>STACK BENCH</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link"><a href="contact.html" class="cta-btn-primary">HIRE ME</a></li>
+                <li class="nav-link"><a href="contact.html" class="cta-btn-secondary">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="page-hero-content" data-animate="fade-drop">
+                <span class="section-tag">PORTFOLIO</span>
+                <h1 class="page-title">Upcoming Builds</h1>
+                <p class="page-subtitle">Production-ready enterprise solutions currently in development</p>
+            </div>
+        </section>
+
+        <section class="builds-full-section">
+            <div class="section-container">
+                <div class="builds-grid">
+                    <article class="build-card" data-animate="slide-up" data-delay="0">
+                        <div class="build-status"><span class="status-badge in-progress">IN PROGRESS</span></div>
+                        <div class="build-icon"><i class="ti ti-shopping-cart"></i></div>
+                        <h3 class="build-title">Supermarket ERP</h3>
+                        <p class="build-desc">Complete inventory management system with POS integration, supplier tracking, real-time analytics, and multi-branch support.</p>
+                        <div class="build-features"><span>Inventory</span><span>POS</span><span>Analytics</span><span>Multi-branch</span></div>
+                        <div class="build-progress"><div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div><span class="progress-text">75% Complete</span></div>
+                        <div class="build-tech"><span class="tech-label">Tech Stack:</span><span class="tech-stack">React, Node.js, PostgreSQL, Docker</span></div>
+                    </article>
+
+                    <article class="build-card" data-animate="slide-up" data-delay="1">
+                        <div class="build-status"><span class="status-badge in-progress">IN PROGRESS</span></div>
+                        <div class="build-icon"><i class="ti ti-school"></i></div>
+                        <h3 class="build-title">School Management ERP</h3>
+                        <p class="build-desc">Comprehensive student information system with attendance tracking, grade management, fee collection, and parent portal.</p>
+                        <div class="build-features"><span>SIS</span><span>Attendance</span><span>Grading</span><span>Fee Collection</span></div>
+                        <div class="build-progress"><div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div><span class="progress-text">60% Complete</span></div>
+                        <div class="build-tech"><span class="tech-label">Tech Stack:</span><span class="tech-stack">React, Python, PostgreSQL, AWS</span></div>
+                    </article>
+
+                    <article class="build-card" data-animate="slide-up" data-delay="2">
+                        <div class="build-status"><span class="status-badge in-progress">IN PROGRESS</span></div>
+                        <div class="build-icon"><i class="ti ti-home"></i></div>
+                        <h3 class="build-title">Rental Property Management</h3>
+                        <p class="build-desc">Property listings management, tenant database, lease tracking, maintenance requests, and automated payments.</p>
+                        <div class="build-features"><span>Properties</span><span>Tenants</span><span>Payments</span><span>Maintenance</span></div>
+                        <div class="build-progress"><div class="progress-bar"><div class="progress-fill" style="width: 45%"></div></div><span class="progress-text">45% Complete</span></div>
+                        <div class="build-tech"><span class="tech-label">Tech Stack:</span><span class="tech-stack">React, Node.js, MongoDB, Stripe</span></div>
+                    </article>
+
+                    <article class="build-card" data-animate="slide-up" data-delay="3">
+                        <div class="build-status"><span class="status-badge planning">PLANNING</span></div>
+                        <div class="build-icon"><i class="ti ti-recycle"></i></div>
+                        <h3 class="build-title">Cashloop Rental System</h3>
+                        <p class="build-desc">Equipment rental management with booking calendar, availability tracking, and automated inventory deduction.</p>
+                        <div class="build-features"><span>Bookings</span><span>Inventory</span><span>Calendar</span><span>Customers</span></div>
+                        <div class="build-progress"><div class="progress-bar"><div class="progress-fill" style="width: 15%"></div></div><span class="progress-text">15% Complete</span></div>
+                        <div class="build-tech"><span class="tech-label">Tech Stack:</span><span class="tech-stack">React, Python, PostgreSQL</span></div>
+                    </article>
+
+                    <article class="build-card" data-animate="slide-up" data-delay="4">
+                        <div class="build-status"><span class="status-badge planning">PLANNING</span></div>
+                        <div class="build-icon"><i class="ti ti-hotel"></i></div>
+                        <h3 class="build-title">Hotel Management System</h3>
+                        <p class="build-desc">Room reservations, front desk operations, housekeeping tracking, guest profiles, and billing integration.</p>
+                        <div class="build-features"><span>Reservations</span><span>Front Desk</span><span>Billing</span><span>Housekeeping</span></div>
+                        <div class="build-progress"><div class="progress-bar"><div class="progress-fill" style="width: 10%"></div></div><span class="progress-text">10% Complete</span></div>
+                        <div class="build-tech"><span class="tech-label">Tech Stack:</span><span class="tech-stack">React, Node.js, PostgreSQL</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-section-content" data-animate="fade-scale">
+                <h2 class="cta-section-title">Have a Project in Mind?</h2>
+                <p class="cta-section-desc">Let's discuss your software needs and build something great together.</p>
+                <a href="contact.html" class="cta-btn-solid">GET IN TOUCH</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Logo" class="footer-logo" width="150">
+                <p class="footer-tagline">Enterprise software solutions for modern businesses.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="builds.html">Builds</a></li>
+                        <li><a href="devLog.html">Dev Logs</a></li>
+                        <li><a href="Specs.html">Specs</a></li>
+                        <li><a href="Audit.html">Audit Trails</a></li>
+                        <li><a href="stackBench.html">Stack Bench</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Projects</h4>
+                    <ul>
+                        <li><a href="builds.html">Supermarket ERP</a></li>
+                        <li><a href="builds.html">School ERP</a></li>
+                        <li><a href="builds.html">Rental System</a></li>
+                        <li><a href="builds.html">Hotel HMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://x.com/yourprofile" target="_blank">X</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p class="copyright">&copy; 2024 Tech Space. All rights reserved.</p></div>
+    </footer>
 </body>
 </html>

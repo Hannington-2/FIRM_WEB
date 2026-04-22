@@ -3,10 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDIT TRAILS | Tech Space - Security & Compliance</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="firm.css">
-    <title>Document</title>
+    <script defer src="firm.js"></script>
 </head>
 <body>
-    
+    <header class="primary-header FLEX">
+        <a href="index.html" class="logo-nav">
+            <img src="assets/logo.svg" alt="Logo" class="logo_main" width="50px">
+        </a>
+        <button type="button" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="primary-navigation FLEX" data-visible="false" role="navigation" aria-label="Primary-Navigation">
+            <ul id="primary-navigation" class="primary-navigation FLEX">
+                <li class="nav-link">
+                    <a href="builds.html"><i class="ti ti-packages"></i><span>BUILDS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="devLog.html"><i class="ti ti-file-text"></i><span>DEV LOGS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="Specs.html"><i class="ti ti-clipboard-list"></i><span>SPECS</span></a>
+                </li>
+                <li class="nav-link active">
+                    <a href="Audit.html"><i class="ti ti-shield-check"></i><span>AUDIT TRAILS</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="stackBench.html"><i class="ti ti-chart-bar"></i><span>STACK BENCH</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="primary-cta FLEX">
+            <ul class="cta-link">
+                <li class="nav-link"><a href="contact.html" class="cta-btn-primary">HIRE ME</a></li>
+                <li class="nav-link"><a href="contact.html" class="cta-btn-secondary">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="page-hero-content" data-animate="fade-drop">
+                <span class="section-tag">SECURITY</span>
+                <h1 class="page-title">Audit Trails</h1>
+                <p class="page-subtitle">Comprehensive security logging and compliance documentation</p>
+            </div>
+        </section>
+
+        <section class="audit-section">
+            <div class="section-container">
+                <div class="audit-grid">
+                    <article class="audit-card" data-animate="slide-up">
+                        <div class="audit-icon"><i class="ti ti-shield-check"></i></div>
+                        <h3 class="audit-title">Security Audit</h3>
+                        <p class="audit-desc">Vulnerability assessments, penetration testing, and compliance checks.</p>
+                        <ul class="audit-features">
+                            <li>OWASP compliance</li>
+                            <li>GDPR-ready logging</li>
+                            <li>Real-time threat monitoring</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card" data-animate="slide-up" data-delay="1">
+                        <div class="audit-icon"><i class="ti ti-file-text"></i></div>
+                        <h3 class="audit-title">Access Logs</h3>
+                        <p class="audit-desc">Detailed user activity tracking with searchable audit trails.</p>
+                        <ul class="audit-features">
+                            <li>User session tracking</li>
+                            <li>File access records</li>
+                            <li>API call monitoring</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card" data-animate="slide-up" data-delay="2">
+                        <div class="audit-icon"><i class="ti ti-database"></i></div>
+                        <h3 class="audit-title">Data Integrity</h3>
+                        <p class="audit-desc">Checksum verification and immutable log records for compliance.</p>
+                        <ul class="audit-features">
+                            <li>Hash chain verification</li>
+                            <li>Backup integrity checks</li>
+                            <li>Retention policy enforcement</li>
+                        </ul>
+                    </article>
+
+                    <article class="audit-card" data-animate="slide-up" data-delay="3">
+                        <div class="audit-icon"><i class="ti ti-chart-bar"></i></div>
+                        <h3 class="audit-title">Compliance Reports</h3>
+                        <p class="audit-desc">Automated generation of SOC 2, ISO 27001, and other compliance reports.</p>
+                        <ul class="audit-features">
+                            <li>Quarterly summaries</li>
+                            <li>Custom report builder</li>
+                            <li>Export formats (PDF, CSV)</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Logo" class="footer-logo" width="150">
+                <p class="footer-tagline">Enterprise software solutions.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul>
+                        <li><a href="builds.html">Builds</a></li>
+                        <li><a href="devLog.html">Dev Logs</a></li>
+                        <li><a href="Specs.html">Specs</a></li>
+                        <li><a href="Audit.html">Audit Trails</a></li>
+                        <li><a href="stackBench.html">Stack Bench</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+                        <li><a href="https://x.com/yourprofile">X</a></li>
+                        <li><a href="https://github.com/yourprofile">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p class="copyright">&copy; 2024 Tech Space. All rights reserved.</p></div>
+    </footer>
 </body>
 </html>
