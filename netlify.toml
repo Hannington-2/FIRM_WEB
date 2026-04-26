@@ -1,0 +1,73 @@
+
+
+[build]
+  publish = "."
+
+# Force HTTPS
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+# Redirect www to non-www
+[[redirects]]
+  from = "www.*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+# Clean URLs (remove .html)
+[[redirects]]
+  from = "/builds"
+  to = "/builds.html"
+  status = 200
+
+[[redirects]]
+  from = "/specs"
+  to = "/specs.html"
+  status = 200
+
+[[redirects]]
+  from = "/dev-log"
+  to = "/dev-log.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+# Custom 404 page (WHEN NOT FOUND)
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Remove trailing slashes
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# Cache headers for CSS
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache headers for JS
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,16 @@
+# Robots.txt for Tech Space
+# Allows all search engines to crawl
+
+User-agent: *
+Allow: /
+Disallow: /assets/private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://techspace.dev/sitemap.xml
+
+# Crawl delay (prevents server overload)
+Crawl-delay: 1
+
+# Specify preferred domain
+Host: https://techspace.dev

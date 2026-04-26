@@ -41,7 +41,9 @@
   body {
     font-family: var(--main-font);
     color: var(--text-main);
-    background-color: var(--back-clr);
+    background-color: var(--back-clr);  
+    background-image: radial-gradient(#1E2A36 1px, transparent 1px);
+    background-size: 30px 30px;
     line-height: 1.6;
     overflow-x: hidden;
   }
@@ -77,7 +79,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
   }
 
   .logo-container {
@@ -260,8 +262,30 @@
     border: 0;
   }
 }
+@layer error-page{
+  .main-error-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    gap: 1.5rem;
+    
+  }
 
-/* ============ HERO SECTION ============ */
+  .error-code {
+    font-family: var(--alt-font);
+    font-size: 6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    -webki
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* ============ HERO SECTION ============ 
 @layer hero {
 
   .hero-section {
@@ -574,7 +598,7 @@
   [data-delay="5"] { transition-delay: 0.5s; }
 }
 
-/* ============ SECTION COMMON STYLES ============ */
+/* ============ SECTION COMMON STYLES ============ 
 @layer sections {
 
   .section-container {
@@ -612,7 +636,7 @@
   }
 }
 
-/* ============ SKILLS SECTION ============ */
+/* ============ SKILLS SECTION ============ 
 @layer skills {
 
   .skills-section {
@@ -685,7 +709,7 @@
   }
 }
 
-/* ============ BUILDS SECTION ============ */
+/* ============ BUILDS SECTION ============ 
 @layer builds {
 
   .builds-section {
@@ -813,7 +837,7 @@
   }
 }
 
-/* ============ REVIEWS SECTION ============ */
+/* ============ REVIEWS SECTION ============ 
 @layer reviews {
 
   .reviews-section {
@@ -1379,7 +1403,7 @@
   }
 }
 
-/* ============ RESPONSIVE ============ */
+/* ============ RESPONSIVE ============ *
 @layer responsive {
 
   @media (max-width: 900px) {
@@ -1474,7 +1498,7 @@
   }
 }
 
-/* ============ PAGE HERO ============ */
+/* ============ PAGE HERO ============ *
 @layer pageHero {
 
   .page-main {
@@ -1521,7 +1545,7 @@
   }
 }
 
-/* ============ FEATURED BUILDS (HOME) ============ */
+/* ============ FEATURED BUILDS (HOME) ============ *
 @layer featured {
 
   .featured-builds-section {
@@ -1608,7 +1632,7 @@
   }
 }
 
-/* ============ HOME REVIEWS ============ */
+/* ============ HOME REVIEWS ============ *
 @layer homeReviews {
 
   .home-reviews-section {
@@ -1656,7 +1680,7 @@
   }
 }
 
-/* ============ BUILDS FULL PAGE ============ */
+/* ============ BUILDS FULL PAGE ============ *
 @layer buildsFull {
 
   .builds-full-section {
@@ -1716,7 +1740,7 @@
   }
 }
 
-/* ============ REVIEWS FULL PAGE ============ */
+/* ============ REVIEWS FULL PAGE ============ *
 @layer reviewsFull {
 
   .reviews-full-section {
@@ -1756,7 +1780,7 @@
   }
 }
 
-/* ============ CONTACT FULL PAGE ============ */
+/* ============ CONTACT FULL PAGE ============ 
 @layer contactFull {
 
   .contact-full-section {
@@ -1808,7 +1832,7 @@
   }
 }
 
-/* ============ FAQ SECTION ============ */
+/* ============ FAQ SECTION ============ 
 @layer faq {
 
   .faq-section {
@@ -1851,7 +1875,7 @@
   }
 }
 
-/* ============ RESPONSIVE UPDATES ============ */
+/* ============ RESPONSIVE UPDATES ============ 
 @layer responsiveUpdate {
 
   @media (max-width: 768px) {
