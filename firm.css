@@ -36,7 +36,7 @@
 
   html {
     scroll-behavior: smooth;
-    font-size: 72.5%; /* 1rem = 10px */
+    /* font-size: 72.5%; 1rem = 10px */
   }
 
   body {
@@ -65,203 +65,77 @@
 }
 
 /* ============ HEADER & NAVIGATION ============ */
-@layer headerNav {
-
-  .FLEX {
+@layer header{
+  .flex{
     display: flex;
+    flex: 1;
     align-items: center;
+    justify-content: center;
   }
 
-  .primary-header {
-    background-color: var(--surface-dark-clr);
-    border-bottom: 1px solid var(--border-deep);
-    justify-content: space-between;
-    padding: 0.75rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    /* backdrop-filter: blur(10px); */
+  .primary-header{
+      width: 100%;
+      height: 50px;
+      background-color: #06B6D4;
+      z-index: 1000;
+      position: sticky;
+      top: 0;
+
   }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  .logo-img{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 2rem;
   }
 
-  .tech-logo-animated {
-    overflow: visible;
-  }
-
-  .logo-text-tech {
-    opacity: 0;
-    animation: logoTextIn 0.8s ease forwards;
-    animation-delay: 0.2s;
-  }
-
-  .logo-text-tagline {
-    opacity: 0;
-    animation: logoTextIn 0.8s ease forwards;
-    animation-delay: 0.5s;
-  }
-
-  .logo-underline {
-    width: 0;
-    animation: logoLineGrow 0.6s ease forwards;
-    animation-delay: 0.8s;
-  }
-
-  @keyframes logoTextIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes logoLineGrow {
-    from {
-      width: 0;
-    }
-    to {
-      width: 140px;
-    }
-  }
-
-  .primary-navigation {
-    gap: 2rem;
-  }
-
-  #primary-navigation {
-    gap: 1.5rem;
-  }
-
-  .nav-link {
-    position: relative;
-  }
-
-  .nav-link a {
-    color: var(--text-muted);
-    font-family: var(--mono-font);
-    font-size: var(--nav-fs);
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 0.5rem 0;
-    transition: color 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .nav-link a:hover {
-    color: var(--accent-blue);
-  }
-
-  .nav-link.active a {
-    color: var(--accent-blue);
-  }
-
-  .nav-indicator {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
-    transition: width 0.3s ease;
-  }
-
-  .nav-link.active .nav-indicator,
-  .nav-link:hover .nav-indicator {
-    width: 100%;
-  }
-
-  .primary-cta {
-    margin-left: 2rem;
-  }
-
-  .cta-link {
-    display: flex;
+  /* navigation */
+  .primary-navigation{
     gap: 1rem;
   }
-
-  .cta-btn-primary {
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    font-family: var(--mono-font);
+  ul{
+    text-decoration: none;
+  }
+  li{
+    text-decoration: none;
+  }
+  a{
+    color: inherit;
     font-size: var(--nav-fs);
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .cta-btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
-  }
 
-  .cta-btn-secondary {
-    border: 1px solid var(--border-deep);
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
+  .CTA-LINK{
+    border: 1px;
+    background-color: #3B82F6;
+    color: inherit;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
     font-family: var(--mono-font);
-    font-size: var(--nav-fs);
     font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: all 0.2s ease;
-  }
+    align-self: flex-end;
+    align-items: center;
 
-  .cta-btn-secondary:hover {
-    border-color: var(--accent-blue);
-    color: var(--accent-blue);
   }
-
-  .mobile-nav-toggle {
-    display: none;
+@media (max-width: 75rem) {
+  .primary-navigation{
+    display: flex;
     flex-direction: column;
-    gap: 5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    z-index: 1001;
+    align-items: center;
+    gap: 3em;
+    margin-inline: 1rem;
+    position: fixed;
+    inset: 0 0 0 0%;
+
+    background-color: #202523;
   }
 
-  .hamburger-line {
-    width: 24px;
-    height: 2px;
-    background-color: var(--text-main);
-    transition: all 0.3s ease;
+  .CTA-LINK{
+  display: none;
   }
+}
 
-  .mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
 }
 @layer error-page{
   .ERROR{
@@ -615,25 +489,30 @@
 
 
 @layer footer{
+
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
   /* animated-logo */
 
   /* Footer Logo Styles - Tech Space */
 .techspace-footer-logo {
   text-align: center;
   position: relative;
-  display: inline-block;
-  margin: 0 auto;
+  /* display: inline-block; */
+  margin: 8px;
 }
 
 .logo-animated {
   font-family: "JetBrains Mono", "SF Mono", monospace;
   font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   background: linear-gradient(135deg, #111418 0%, #1E2A36 100%);
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -716,9 +595,33 @@
 }
 .techspace-footer-logo:hover .logo-pulse {
   background: #60A5FA;
+  animation: widthPulse 1s ease-in-out infinite;
+}
+.social-media-link{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid var(--border-deep);
+  margin: 0.5rem 0;
+  width: 90%;
+}
+.copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
 }
 }
-/* ============ SOCIAL BANNER ============ */
+/* ============ SOCIAL BANNER ============ 
 @layer socialBanner {
 
   .social-banner-section {
